@@ -1,7 +1,34 @@
-# Desenvolvimento da arquitetura inicial de uma aplicação IoT capaz de receber e transmitir dados provenientes de dispositivos conectados.
-##
+# Tech Girls - Projeto IBM - Tiana & Edge Computing
+
+# Sobre o nosso projeto
+
+Com Smart Cities, em uma pesquisa, entendemos que o maior problema que atinge São Paulo e todos que aqui habitam é justamente o trânsito. Então, começamos a pensar em formas de melhorias do trânsito unindo a tecnologia a nosso favor.
+
+## O que faremos, então, para a melhoria do trânsito?
+
+Com Python, criamos uma inteligência artificial chamada Tiana que foca na melhor experiência do usuário e que se comunica diretamente com ele. Cada usuário tem a sua preferência, e além das configurações que o próprio usuário poderá colocar manualmente, a ideia é fazer um machine learning, para que cada usuário tenha uma experiência única. <br>
+
+Para nos auxiliar nesse trabalho, iremos utilizar o ESP32, que conecta a bluetooth e poderíamos, futuramente, fazer uma conexão com a Tiana que avisaria em tempo real se um local está congestionado ou não. Além da própria comunicação com os usuários com a aplicação. E, antes de avançarmos para o tópico que fala melhor sobre os sensores que utilizaremos e o que pretendemos fazer futuramente com o ESP32, acesse ao <a href="https://github.com/FIAP-Tech-Girls/Challenge-Python">repositório da Tiana</a> aqui, para saber mais informações!
+
+## ESP32 e como ele nos auxiliará nesse processo
+
+Os sensores que iremos utilizar são:
+<ul>
+    <li>Sensores de Infravermelho (IR): Coloque sensores IR em cada faixa de tráfego para detectar veículos.</li>
+    <li>Sensores de Ultrassom: Esses sensores podem medir a distância até um objeto, o que pode ser usado para detectar veículos.</li>
+</ul>
+
+Além de fazer um cálculo para sabermos se está ou não congestionado, pretendemos utilizar leds para semaforos inteligentes e um fluxo mais inteligente pela cidade, melhorando experiência não somente dos motoristas, como também dos pedestres.
+
+## Como iremos simular?
+
+Iremos fazer uma maquete, para mostrar a banca e nos auxiliar na etapa de testagem, quando tudo estiver pronto. A maquete será em mdf e utilizaremos vários carrinhos com um único destino, e dois caminhos distintos para auxiliar o grupo.
+
+# Challenge de Edge
+## O que fizemos nessa primeira etapa da terceira sprint?
+Nessa primeira etapa, entendemos como funciona um servidor e como podemos ver se está tudo funcionando corretamente. Segue abaixo o tutorial do que fizemos nessa sprint 3. <br>
+*Link do vídeo para tutorial melhor explicado*: https://youtu.be/NZnPXaSQGAM?si=187WFFkXnyoz2EIe
 ## Tutorial para auxílio na instalação de um servidor local de IoT “Fiware”
-##
 ### Primeiro Passo:
 Baixar o software de Virtual Machine -  VMware workstation
 ### Segundo Passo:
@@ -60,7 +87,3 @@ Após a correta inicialização dos containers Docker com a estrutura do Fiware,
 ## Décimo Passo:
 Apresentar as respostas dos comandos “Health Check” no Postman dos componentes “IOT Agent MQTT”, “Orion Context Broker” e do “STH - Comet” (em Send, enviar comando e visualizar a reposta Health Check do Orion Context Broker)
 ##
-
-# Sobre o nosso projeto:
-
-Com o Arduíno/ESP32, iremos melhorar fluxo de carros, utilizando semáforos inteligentes. Além de medir o trânsito em tempo real, integrando com a IA em Python posteriormente, onde haveria um sensor de velocidade e distância, parecido com os que têm nas vias, e um LCD, que avisaria se está ou não congestionado. Com a integração futura, com desenvolvimento web também, enviaria para os usuários outras rotas, justamente a ideia principal do projeto.
